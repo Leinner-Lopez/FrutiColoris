@@ -9,7 +9,7 @@ import Layout from "../layouts/Layout.astro";
     <main class="hero" id="Hero">
         <div class="hero__grid">
             <div class="hero__content reveal">
-                <p class="eyebrow">FrutiColoris</p>
+                <p class="eyebrow">FrutyColoris</p>
                 <h1 class="hero__title">
                     Dulzura, frescura y <em>creatividad</em> en cada postre
                 </h1>
@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro";
                 </p>
             </div>
             <div class="hero__image reveal" style="--index: 1">
-                <img src="/oso.jpeg" alt="Postre de oso - FrutiColoris" />
+                <img src="/oso.jpeg" alt="Postre de oso - FrutyColoris" />
             </div>
         </div>
     </main>
@@ -34,7 +34,7 @@ import Layout from "../layouts/Layout.astro";
 
         <div class="about__grid">
             <div class="about__image reveal">
-                <img src="/About us.jpeg" alt="Postres FrutiColoris" />
+                <img src="/About us.jpeg" alt="Postres FrutyColoris" />
             </div>
             <div class="about__content reveal" style="--index: 1">
                 <p class="about__text">
@@ -67,7 +67,10 @@ import Layout from "../layouts/Layout.astro";
                     responsable.
                 </p>
             </div>
-            <div class="value-card value-card--orange reveal" style="--index: 1">
+            <div
+                class="value-card value-card--orange reveal"
+                style="--index: 1"
+            >
                 <div class="value-card__meta">
                     <span class="value-card__dot"></span>
                     <span class="value-card__index">02</span>
@@ -86,32 +89,45 @@ import Layout from "../layouts/Layout.astro";
     <section id="Productos" class="products">
         <div class="section__header reveal">
             <p class="eyebrow">Productos</p>
-            <h2 class="section__title">Nuestros postres favoritos</h2>
+            <h2 class="section__title">Nuestros Postres</h2>
         </div>
         <div class="products__grid">
-            <a href="#" class="product-card reveal">
+            <a
+                target="_blank"
+                href="https://wa.me/573013275340?text=Hola%20Fruty%20Coloriss%2C%20quiero%20hacer%20un%20pedido%20de%20un%20Postre%20Personalizado."
+                class="product-card reveal"
+            >
                 <div class="product-card__image">
-                    <img src="/oso.jpeg" alt="Postre de oso - FrutiColoris" />
+                    <img
+                        src="/pequeno.jpeg"
+                        alt="Postre Personalizado - FrutyColoris"
+                    />
                 </div>
                 <div class="product-card__body">
-                    <span class="tag tag--pink">Postre</span>
-                    <h3 class="product-card__title">Postre de Oso</h3>
+                    <h3 class="product-card__title">Postre de Perzonalizado</h3>
                     <p class="product-card__text">
-                        Una explosión de color y sabor en cada porción, ideal
-                        para sorprender en cualquier celebración.
+                        Elige tus frutas, sabores y colores favoritos y crea un
+                        postre único, preparado especialmente para ti...
                     </p>
                 </div>
             </a>
-            <a href="#" class="product-card reveal" style="--index: 1">
+            <a
+                href="https://wa.me/573013275340?text=Hola%20Fruty%20Coloriss%2C%20quiero%20hacer%20un%20pedido%20de%20una%20Torta%20Personalizada."
+                class="product-card reveal"
+                style="--index: 1"
+                target="_blank"
+            >
                 <div class="product-card__image">
-                    <img src="/About us.jpeg" alt="Selección especial FrutiColoris" />
+                    <img
+                        src="/grande.jpeg"
+                        alt="Torta Personalizada FrutyColoris"
+                    />
                 </div>
                 <div class="product-card__body">
-                    <span class="tag tag--orange">Postre</span>
-                    <h3 class="product-card__title">Selección Especial</h3>
+                    <h3 class="product-card__title">Torta Personalizada</h3>
                     <p class="product-card__text">
-                        Postres artesanales elaborados con ingredientes frescos
-                        y mucho cariño para tus momentos especiales.
+                        Especiales para cumpleaños, reuniones y momentos
+                        inolvidables...
                     </p>
                 </div>
             </a>
@@ -126,7 +142,18 @@ import Layout from "../layouts/Layout.astro";
         <div class="contact__grid">
             <div class="contact__item reveal">
                 <span class="contact__icon-wrap contact__icon-wrap--pink">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0-1.657 1.343-3 3-3h1.372c.516 0 .966.351 1.091.852l.917 3.666a1.125 1.125 0 01-.294 1.061l-1.293 1.293a1.125 1.125 0 00-.263 1.176 12.06 12.06 0 006.442 6.442c.42.163.9.03 1.176-.263l1.293-1.293a1.125 1.125 0 011.06-.294l3.667.917c.5.125.852.575.852 1.091V19.5c0 1.657-1.343 3-3 3h-.75C9.716 22.5 1.5 14.284 1.5 4.5v-.75z" /></svg>
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M2.25 6.75c0-1.657 1.343-3 3-3h1.372c.516 0 .966.351 1.091.852l.917 3.666a1.125 1.125 0 01-.294 1.061l-1.293 1.293a1.125 1.125 0 00-.263 1.176 12.06 12.06 0 006.442 6.442c.42.163.9.03 1.176-.263l1.293-1.293a1.125 1.125 0 011.06-.294l3.667.917c.5.125.852.575.852 1.091V19.5c0 1.657-1.343 3-3 3h-.75C9.716 22.5 1.5 14.284 1.5 4.5v-.75z"
+                        />
+                    </svg>
                 </span>
                 <div>
                     <h3 class="contact__label">WhatsApp</h3>
@@ -135,16 +162,47 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="contact__item reveal" style="--index: 1">
                 <span class="contact__icon-wrap contact__icon-wrap--blue">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.25" cy="6.75" r="0.75" fill="currentColor" stroke="none" /></svg>
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    >
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle
+                            cx="17.25"
+                            cy="6.75"
+                            r="0.75"
+                            fill="currentColor"
+                            stroke="none"
+                        />
+                    </svg>
                 </span>
                 <div>
                     <h3 class="contact__label">Instagram</h3>
-                    <p class="contact__value">@fruticoloris</p>
+                    <p class="contact__value">@FrutyColoris</p>
                 </div>
             </div>
             <div class="contact__item reveal" style="--index: 2">
                 <span class="contact__icon-wrap contact__icon-wrap--orange">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                        />
+                    </svg>
                 </span>
                 <div>
                     <h3 class="contact__label">Ubicación</h3>
@@ -153,7 +211,19 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="contact__item reveal" style="--index: 3">
                 <span class="contact__icon-wrap contact__icon-wrap--pink">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V12l3 1.5" /></svg>
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    >
+                        <circle cx="12" cy="12" r="9" />
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 7.5V12l3 1.5"
+                        />
+                    </svg>
                 </span>
                 <div>
                     <h3 class="contact__label">Horario</h3>
@@ -165,7 +235,7 @@ import Layout from "../layouts/Layout.astro";
 
     <footer class="footer">
         <p class="footer__text">
-            <span class="footer__brand">FrutiColoris</span> — Todos los derechos
+            <span class="footer__brand">FrutyColoris</span> — Todos los derechos
             reservados
         </p>
     </footer>
@@ -223,7 +293,7 @@ import Layout from "../layouts/Layout.astro";
 
     .tag {
         display: inline-block;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 0.05em;
         text-transform: uppercase;
@@ -303,7 +373,7 @@ import Layout from "../layouts/Layout.astro";
 
     .hero__message {
         color: var(--color-muted);
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         line-height: 1.7;
         max-width: 460px;
     }
@@ -348,7 +418,7 @@ import Layout from "../layouts/Layout.astro";
 
     .about__text {
         color: var(--color-muted);
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         line-height: 1.8;
     }
 
@@ -395,7 +465,7 @@ import Layout from "../layouts/Layout.astro";
 
     .value-card__index {
         font-family: var(--font-display);
-        font-size: 0.85rem;
+        font-size: 1rem;
         letter-spacing: 0.05em;
         color: var(--color-muted);
     }
@@ -409,7 +479,7 @@ import Layout from "../layouts/Layout.astro";
 
     .value-card__text {
         color: var(--color-muted);
-        font-size: 1rem;
+        font-size: 1.1rem;
         line-height: 1.7;
     }
 
@@ -465,7 +535,7 @@ import Layout from "../layouts/Layout.astro";
 
     .product-card__title {
         font-family: var(--font-display);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--color-ink);
         margin-top: 4px;
@@ -473,7 +543,7 @@ import Layout from "../layouts/Layout.astro";
 
     .product-card__text {
         color: var(--color-muted);
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         line-height: 1.6;
     }
 
