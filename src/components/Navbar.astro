@@ -56,12 +56,11 @@ const links = [
     .header {
         position: fixed;
         top: 24px;
-        left: 50%;
-        transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 10;
+        margin: 24px auto 0;
         padding: 8px;
         width: calc(100% - 24px);
         max-width: 1200px;
@@ -183,19 +182,35 @@ const links = [
     }
 
     .mobile-menu {
-        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
         width: 100%;
+        border-radius: 24px;
+        border: 2px solid transparent;
+        background: transparent;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
+        pointer-events: none;
         transition:
             max-height 0.4s ease,
             opacity 0.3s ease;
     }
 
     .header.nav-open .mobile-menu {
+        border-color: #ff1493;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 20, 147, 0.1),
+            rgba(0, 128, 208, 0.1),
+            rgba(255, 107, 53, 0.1)
+        );
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
         max-height: 320px;
         opacity: 1;
+        pointer-events: auto;
     }
 
     .mobile-menu__list {
@@ -226,6 +241,7 @@ const links = [
     /* Responsive */
     @media (max-width: 768px) {
         .header {
+            margin-top: 0;
             padding: 12px;
         }
 
@@ -235,10 +251,6 @@ const links = [
 
         .header__menu-btn {
             display: flex;
-        }
-
-        .mobile-menu {
-            display: block;
         }
     }
 </style>
