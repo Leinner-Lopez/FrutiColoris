@@ -103,6 +103,10 @@ const links = [
         scale: 1.05;
     }
 
+    .header.nav-open.header-compact {
+        backdrop-filter: none;
+    }
+
     .header__container {
         display: flex;
         justify-content: space-between;
@@ -199,15 +203,15 @@ const links = [
     }
 
     .header.nav-open .mobile-menu {
-        border-color: #ff1493;
+        border-color: rgba(255, 20, 147, 0.5);
         background: linear-gradient(
-            90deg,
-            rgba(255, 20, 147, 0.1),
-            rgba(0, 128, 208, 0.1),
-            rgba(255, 107, 53, 0.1)
+            120deg,
+            rgba(255, 20, 147, 0.55),
+            rgba(0, 128, 208, 0.55),
+            rgba(255, 107, 53, 0.55)
         );
-        backdrop-filter: blur(5px);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         max-height: 320px;
         opacity: 1;
         pointer-events: auto;
@@ -223,7 +227,7 @@ const links = [
     .mobile-menu__link {
         display: block;
         padding: 14px 16px;
-        color: #0080d0;
+        color: var(--color-pink);
         text-decoration: none;
         font-weight: 600;
         border-radius: 16px;
@@ -234,8 +238,9 @@ const links = [
 
     .mobile-menu__link:hover,
     .mobile-menu__link:active {
-        background-color: rgba(255, 20, 147, 0.08);
-        color: #ff1493;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(0);
+        color: var(--color-pink);
     }
 
     /* Responsive */
