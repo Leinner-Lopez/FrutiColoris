@@ -84,10 +84,9 @@ const links = [
     .header.nav-open {
         max-width: 800px;
         border: 2px solid #ff1493;
-        background: linear-gradient(
+        background-color: linear-gradient(
             90deg,
             rgba(255, 20, 147, 0.1),
-            rgba(0, 128, 208, 0.1),
             rgba(255, 107, 53, 0.1)
         );
         backdrop-filter: blur(5px);
@@ -103,7 +102,7 @@ const links = [
         scale: 1.05;
     }
 
-    .header.nav-open.header-compact {
+    .header-compact {
         backdrop-filter: none;
     }
 
@@ -208,12 +207,7 @@ const links = [
 
     .header.nav-open .mobile-menu {
         border-color: rgba(255, 20, 147, 0.5);
-        background: linear-gradient(
-            120deg,
-            rgba(255, 20, 147, 0.55),
-            rgba(0, 128, 208, 0.55),
-            rgba(255, 107, 53, 0.55)
-        );
+        background-color: rgba(255, 107, 53, 0.25);
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         max-height: 320px;
